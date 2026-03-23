@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rogue-css-sniper"
+version = "0.1.0"
+description = "Hunt down hardcoded CSS values and snap them to design system tokens"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "rogue-css-sniper contributors"}]
+keywords = ["css", "design-tokens", "lint", "tailwind", "design-system"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.1"]
+
+[project.scripts]
+rogue-css-sniper = "rogue_css_sniper.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["rogue_css_sniper*"]
