@@ -1,5 +1,8 @@
 # rogue-css-sniper
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/code)
+
+
 Hunt down hardcoded CSS values and snap them to design system tokens.
 
 ## Features
